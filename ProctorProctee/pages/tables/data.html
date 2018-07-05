@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 2 | Data Tables</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../plugins/datatables/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+
+      <header class="main-header">
+        <a href="../index.html" class="logo">
+          <span class="logo-mini"><b>A</b>LT</span>
+          <span class="logo-lg"><b>KJSCE</b></span>
+        </a>
+        <nav class="navbar navbar-static-top" role="navigation">
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">                  
+              <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img src="../dist/img/sandu.png" class="user-image" alt="User Image">
+                  <span class="hidden-xs">Sandun Pushpakumara</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="user-header">
+                    <img src="../dist/img/sandu.png" class="img-circle" alt="User Image">
+                    <p>
+                      Alexander Pierce - Web Developer
+                      <small>Member since Nov. 2012</small>
+                    </p>
+                  </li>
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                    </div>
+                    <div class="pull-right">
+                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>              
+            </ul>
+          </div>
+        </nav>
+      </header>
+      
+      <aside class="main-sidebar">
+        <section class="sidebar">
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="../dist/img/sandu.png" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+              <p>Sandun Pushpakumara</p>
+            </div>
+          </div>
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+              <input type="text" name="q" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </form>
+         <ul class="sidebar-menu">
+            <li class="active"><a href="../index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li><a href="pages/"><i class="fa fa-circle-o"></i>Profile </a></li>             
+            <li class="active"><a href="calendar.html"><i class="fa fa-calendar"></i> Calendar</a></li>
+            <li class="active"><a href="upload.php">Announcements </a></li>
+            <li class="active"><a href="tables/data.html"><i class="fa fa-book"></i>Attendance</a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+          </ul>
+        </section>
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            Data Tables
+            <small>advanced tables</small>
+          </h1>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="box">
+                <div class="box-header">
+                  <h3 class="box-title">Data Table With Full Features</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+    </div><!-- ./wrapper -->
+
+    <script src="../../plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../plugins/datatables/dataTables.bootstrap.min.js"></script>  
+    <script>
+      $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+          "paging": true,
+          "lengthChange": false,
+          "searching": false,
+          "ordering": true,
+          "info": true,
+          "autoWidth": false
+        });
+      });
+    </script>
+  </body>
+</html>
